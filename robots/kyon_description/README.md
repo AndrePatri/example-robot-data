@@ -20,10 +20,12 @@ Example Robot Data loader.
 | `kyon_wheeled_manipulator` | yes | yes |
 
 The current source model uses detailed meshes throughout. To keep the dataset
-compact, its visual meshes were reduced with topology- and normal-preserving
+compact, most visual meshes were reduced with topology- and normal-preserving
 quadric edge-collapse decimation, targeting 5,000 triangles per unique mesh.
-The already simplified source collision meshes are retained unchanged, and
-wheel collision geometry remains the cylinder defined by the source xacro.
+The pelvis is retained at source resolution: it contains hundreds of separate
+components, and whole-mesh decimation visibly corrupts its surface. The already
+simplified source collision meshes are retained unchanged, and wheel collision
+geometry remains the cylinder defined by the source xacro.
 
 This source branch includes steering-wheel joints, corrected contact frames and
 wheel dimensions, a non-mirrored left-foot mesh, and collision meshes that do

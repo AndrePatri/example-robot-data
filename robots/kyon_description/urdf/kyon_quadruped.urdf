@@ -28,7 +28,7 @@
     <visual>
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0 0.0"/>
       <geometry>
-        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/visual/mesh_pelvis_reduced.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/visual/mesh_pelvis.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dark_grey"/>
     </visual>
