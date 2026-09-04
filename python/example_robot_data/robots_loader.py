@@ -32,6 +32,30 @@ class CentauroLoader(RobotLoader):
     free_flyer = True
 
 
+class KyonQuadrupedLoader(RobotLoader):
+    path = "kyon_description"
+    urdf_filename = "kyon_quadruped.urdf"
+    urdf_subpath = "urdf"
+    srdf_filename = "kyon_quadruped.srdf"
+    ref_posture = "home"
+    free_flyer = True
+
+
+class KyonQuadrupedManipulatorLoader(KyonQuadrupedLoader):
+    urdf_filename = "kyon_quadruped_manipulator.urdf"
+    srdf_filename = "kyon_quadruped_manipulator.srdf"
+
+
+class KyonWheeledLoader(KyonQuadrupedLoader):
+    urdf_filename = "kyon_wheeled.urdf"
+    srdf_filename = "kyon_wheeled.srdf"
+
+
+class KyonWheeledManipulatorLoader(KyonQuadrupedLoader):
+    urdf_filename = "kyon_wheeled_manipulator.urdf"
+    srdf_filename = "kyon_wheeled_manipulator.srdf"
+
+
 class B1Loader(RobotLoader):
     path = "b1_description"
     urdf_filename = "b1.urdf"
@@ -484,6 +508,10 @@ class xArm7Loader(RobotLoader):
 
 ROBOTS = {
     "centauro": CentauroLoader,
+    "kyon_quadruped": KyonQuadrupedLoader,
+    "kyon_quadruped_manipulator": KyonQuadrupedManipulatorLoader,
+    "kyon_wheeled": KyonWheeledLoader,
+    "kyon_wheeled_manipulator": KyonWheeledManipulatorLoader,
     "b1": B1Loader,
     "bravo7_gripper": Bravo7GripperLoader,
     "bravo7_no_ee": Bravo7NoEndEffectorLoader,

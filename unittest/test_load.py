@@ -36,6 +36,18 @@ class RobotTestCase(unittest.TestCase):
     def test_centauro(self):
         self.check("centauro", 46, 45)
 
+    def test_kyon_quadruped(self):
+        self.check("kyon_quadruped", 19, 18)
+
+    def test_kyon_quadruped_manipulator(self):
+        self.check("kyon_quadruped_manipulator", 29, 28)
+
+    def test_kyon_wheeled(self):
+        self.check("kyon_wheeled", 31, 26)
+
+    def test_kyon_wheeled_manipulator(self):
+        self.check("kyon_wheeled_manipulator", 41, 36)
+
     def test_b1(self):
         self.check("b1", 19, 18)
 
