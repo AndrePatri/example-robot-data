@@ -56,6 +56,22 @@ class KyonWheeledManipulatorLoader(KyonQuadrupedLoader):
     srdf_filename = "kyon_wheeled_manipulator.srdf"
 
 
+class KyonQuadrupedMeshLoader(KyonQuadrupedLoader):
+    urdf_filename = "kyon_quadruped_mesh.urdf"
+
+
+class KyonQuadrupedManipulatorMeshLoader(KyonQuadrupedManipulatorLoader):
+    urdf_filename = "kyon_quadruped_manipulator_mesh.urdf"
+
+
+class KyonWheeledMeshLoader(KyonWheeledLoader):
+    urdf_filename = "kyon_wheeled_mesh.urdf"
+
+
+class KyonWheeledManipulatorMeshLoader(KyonWheeledManipulatorLoader):
+    urdf_filename = "kyon_wheeled_manipulator_mesh.urdf"
+
+
 class B1Loader(RobotLoader):
     path = "b1_description"
     urdf_filename = "b1.urdf"
@@ -512,6 +528,10 @@ ROBOTS = {
     "kyon_quadruped_manipulator": KyonQuadrupedManipulatorLoader,
     "kyon_wheeled": KyonWheeledLoader,
     "kyon_wheeled_manipulator": KyonWheeledManipulatorLoader,
+    "kyon_quadruped_mesh": KyonQuadrupedMeshLoader,
+    "kyon_quadruped_manipulator_mesh": KyonQuadrupedManipulatorMeshLoader,
+    "kyon_wheeled_mesh": KyonWheeledMeshLoader,
+    "kyon_wheeled_manipulator_mesh": KyonWheeledManipulatorMeshLoader,
     "b1": B1Loader,
     "bravo7_gripper": Bravo7GripperLoader,
     "bravo7_no_ee": Bravo7NoEndEffectorLoader,

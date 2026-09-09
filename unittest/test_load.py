@@ -40,13 +40,19 @@ class RobotTestCase(unittest.TestCase):
         self.check("kyon_quadruped", 19, 18)
 
     def test_kyon_quadruped_manipulator(self):
-        self.check("kyon_quadruped_manipulator", 29, 28)
+        self.check("kyon_quadruped_manipulator", 31, 30)
 
     def test_kyon_wheeled(self):
         self.check("kyon_wheeled", 31, 26)
 
     def test_kyon_wheeled_manipulator(self):
-        self.check("kyon_wheeled_manipulator", 41, 36)
+        self.check("kyon_wheeled_manipulator", 43, 38)
+
+    def test_kyon_mesh_collision_models(self):
+        self.check("kyon_quadruped_mesh", 19, 18)
+        self.check("kyon_quadruped_manipulator_mesh", 31, 30)
+        self.check("kyon_wheeled_mesh", 31, 26)
+        self.check("kyon_wheeled_manipulator_mesh", 43, 38)
 
     def test_b1(self):
         self.check("b1", 19, 18)

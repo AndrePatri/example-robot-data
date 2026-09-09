@@ -118,6 +118,12 @@
       </geometry>
       <material name="dark_grey"/>
     </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-roll.stl" scale="0.001 -0.001 0.001"/>
+      </geometry>
+    </collision>
   </link>
   <link name="hip_pitch_1_link">
     <inertial>
@@ -140,9 +146,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.165 0.19736"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.138 0.468 0.094"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-pitch.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="kyon_orange"/>
     </collision>
@@ -176,9 +182,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.154688 0.021831"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.079951 0.377576 0.043661"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_foot-leg.stl" scale="-0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -227,6 +233,12 @@
       </geometry>
       <material name="dark_grey"/>
     </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-roll.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
   </link>
   <link name="hip_pitch_2_link">
     <inertial>
@@ -249,9 +261,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.165 0.19736"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.138 0.468 0.094"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-pitch.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="kyon_orange"/>
     </collision>
@@ -285,9 +297,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.154688 0.021831"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.079951 0.377576 0.043661"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_foot-leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -336,6 +348,12 @@
       </geometry>
       <material name="dark_grey"/>
     </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-roll.stl" scale="0.001 -0.001 0.001"/>
+      </geometry>
+    </collision>
   </link>
   <link name="hip_pitch_3_link">
     <inertial>
@@ -358,9 +376,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.165 0.19736"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.138 0.468 0.094"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-pitch.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="kyon_orange"/>
     </collision>
@@ -394,9 +412,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.154688 0.021831"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.079951 0.377576 0.043661"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_foot-leg.stl" scale="-0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -445,6 +463,12 @@
       </geometry>
       <material name="dark_grey"/>
     </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-roll.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
   </link>
   <link name="hip_pitch_4_link">
     <inertial>
@@ -467,9 +491,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.165 0.19736"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.138 0.468 0.094"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_hip-pitch.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="kyon_orange"/>
     </collision>
@@ -503,9 +527,9 @@
       <material name="dark_grey"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.154688 0.021831"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.079951 0.377576 0.043661"/>
+        <mesh filename="package://example-robot-data/robots/kyon_description/meshes/collision_simplified/mesh_foot-leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
