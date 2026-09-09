@@ -46,7 +46,9 @@ in the primitive variants: its iDCOL convex-poly conversion is tractable,
 whereas its enclosing box creates false pelvis--shoulder collisions in the
 nominal upper-body pose. The `_mesh` variants use the simplified link meshes,
 including hip roll. Wheels remain analytic cylinders in both representations
-so their collision geometry is rotationally symmetric.
+so their collision geometry is rotationally symmetric. On legged primitive
+models, the lower-leg box is cropped before the spherical foot proxy: the sphere
+defines ground contact and the box covers only the knee-side link surface.
 
 This source branch includes revised inertial properties, steering-wheel
 kinematics, foot/contact-frame placement, collision meshes, and reference
